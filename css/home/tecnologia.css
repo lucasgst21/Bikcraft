@@ -1,0 +1,68 @@
+.tecnologia-bg {
+  margin-top: 50px;
+  background-color: #111111;
+  box-shadow: inset 0px 80px #fff, inset 0px -80px #fff;
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  height: 1050px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-tecnologia {
+  margin-top: 80px;
+}
+
+.container-tecnologia h2 {
+  margin-top: 20px;
+}
+
+.descricao-tecnologia {
+  margin-top: 32px;
+}
+
+.tec-avancada {
+  margin-top: 80px;
+}
+
+.container-tecnologia a {
+  display: inline-block;
+  margin-top: 20px;
+  position: relative;
+}
+
+.tecnologia a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffbb00;
+  margin-top: 1px;
+  position: absolute;
+}
+
+.tecnologia-atributos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.descricao-atributos {
+  display: grid;
+  gap: 8px;
+}
+
+.facas {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
