@@ -1,68 +1,79 @@
 .tecnologia-bg {
-  margin-top: 50px;
-  background-color: #111111;
-  box-shadow: inset 0px 80px #fff, inset 0px -80px #fff;
+  background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
 }
 
 .tecnologia {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0px 40px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  height: 1050px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container-tecnologia {
-  margin-top: 80px;
-}
-
-.container-tecnologia h2 {
-  margin-top: 20px;
-}
-
-.descricao-tecnologia {
-  margin-top: 32px;
-}
-
-.tec-avancada {
-  margin-top: 80px;
-}
-
-.container-tecnologia a {
-  display: inline-block;
-  margin-top: 20px;
-  position: relative;
-}
-
-.tecnologia a::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #ffbb00;
-  margin-top: 1px;
-  position: absolute;
-}
-
-.tecnologia-atributos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 80px;
   gap: 40px;
 }
 
-.descricao-atributos {
-  display: grid;
-  gap: 8px;
-}
-
-.facas {
+.tecnologia-imagem img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
+  object-position: left;
+}
+
+.tecnologia-conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tecnologia-conteudo > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tecnologia-conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.tecnologia-conteudo > p {
+  margin-bottom: 20px;
+}
+
+.tecnologia a {
+  margin-bottom: 80px;
+}
+
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.tecnologia-vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.tecnologia-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: initial;
+  }
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tecnologia-imagem {
+    display: none;
+  }
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
 }
